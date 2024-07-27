@@ -10,6 +10,20 @@
 <body>
     <div class="container">
         <h1>Pramit Translator</h1>
+        <label for="sourceLang">Source Language:</label>
+        <select id="sourceLang">
+            <option value="en">English</option>
+            <option value="ne">Nepali</option>
+            <option value="nw">Newari</option>
+        </select>
+
+        <label for="targetLang">Target Language:</label>
+        <select id="targetLang">
+            <option value="ne">Nepali</option>
+            <option value="en">English</option>
+            <option value="nw">Newari</option>
+        </select>
+
         <textarea id="inputText" placeholder="Enter text here or use voice input"></textarea>
         <button onclick="startVoiceInput()">Start Voice Input</button>
         <button onclick="performTranslation()">Translate</button>
