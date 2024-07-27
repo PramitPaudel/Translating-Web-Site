@@ -10,27 +10,10 @@
 <body>
     <div class="container">
         <h1>Pramit Translator</h1>
-        <div class="translator-form">
-            <textarea id="inputText" placeholder="Enter text here" aria-label="Enter text here"></textarea>
-            <div class="select-group">
-                <label for="sourceLang">From:</label>
-                <select id="sourceLang" aria-label="Select source language">
-                    <option value="nepali">Nepali</option>
-                    <option value="newari">Newari</option>
-                    <option value="english">English</option>
-                </select>
-                <label for="targetLang">To:</label>
-                <select id="targetLang" aria-label="Select target language">
-                    <option value="nepali">Nepali</option>
-                    <option value="newari">Newari</option>
-                    <option value="english">English</option>
-                </select>
-            </div>
-            <button onclick="translateText()">Translate</button>
-            <button onclick="startVoiceInput()">🎙️ Speak</button>
-            <p id="translatedText" class="result"></p>
-            <button onclick="speakText()">Read Aloud</button>
-        </div>
+        <textarea id="inputText" placeholder="Enter text here or use voice input"></textarea>
+        <button onclick="startVoiceInput()">Start Voice Input</button>
+        <button onclick="performTranslation()">Translate</button>
+        <p id="translatedText"></p>
     </div>
     <script src="script.js"></script>
 </body>
